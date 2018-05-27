@@ -1,3 +1,10 @@
 {
-  "presets": ["env"]
+  "presets": ["env"],
+  "plugins": ["transform-object-rest-spread"],
+  "env": {
+    "prod": {
+      "presets": ["minify"],
+      "ignore": ["*/**.spec.js"]
+    }
+  }
 }

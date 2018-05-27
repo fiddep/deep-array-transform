@@ -1,21 +1,29 @@
 {
   "name": "deep-array-transform",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "transform arrays into key value objects",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "rimraf dist/ && babel src -d dist",
+    "format": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\"",
+    "prepublishOnly": "cross-env BABEL_ENV=prod&&babel src -d dist",
     "test": "jest --watchAll --color",
-    "format": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\""
+    "test:coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "Fredrik Palmquist",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "jest": "^23.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "prettier": "^1.12.1"
+    "babel-preset-minify": "^0.4.3",
+    "cross-env": "^5.1.6",
+    "prettier": "^1.12.1",
+    "rimraf": "^2.6.2"
   }
 }
