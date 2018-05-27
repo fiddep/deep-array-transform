@@ -2,7 +2,7 @@
 
 ## Motivation
 
-This is a tool used for recursivly transforming json structures. More specifically transform arrays to key->value objects.
+This is a tool used for recursively transforming json structures. More specifically transform arrays to key->value objects.
 
 ## Installation
 
