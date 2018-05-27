@@ -13,9 +13,7 @@
   "keywords": [],
   "author": "Fredrik Palmquist",
   "license": "MIT",
-  "dependencies": {
-    "jest": "^23.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -23,6 +21,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-minify": "^0.4.3",
     "cross-env": "^5.1.6",
+    "jest": "^23.0.1",
     "prettier": "^1.12.1",
     "rimraf": "^2.6.2"
   }
