@@ -1,0 +1,21 @@
+{
+  "name": "deep-array-transform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --color",
+    "format": "prettier --write \"{src,__{tests,mocks}__}/**/*.js\""
+  },
+  "keywords": [],
+  "author": "Fredrik Palmquist",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^23.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "prettier": "^1.12.1"
+  }
+}
