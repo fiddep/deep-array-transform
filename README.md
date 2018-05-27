@@ -40,11 +40,11 @@ defaultKey accepts either a string
 
 ```
 const options = {id: "apiId"}
-const data = [{apiId1: "id1"}]
+const data = [{apiId: "id1"}]
 transform(data, options)
 //will result in transforming like following
 {
-    "apiId1": {apiId1: "id1"}
+    "id1": {apiId: "id1"}
 }
 ```
 
@@ -52,12 +52,12 @@ a object with rules for found keys with a fallback value of default
 
 ```
 const options = {id: {default: "apiId", subData: "subId"}}
-const data = [{apiId1: "id1", subData: [{subId: "id1"}]}]
+const data = [{apiId: "id1", subData: [{subId: "id1"}]}]
 transform(data, options)
 //will result in transforming like following
 {
-    "apiId1": {
-        apiId1: "id1",
+    "id1": {
+        apiId: "id1",
         subData: {
             id1: {subId: "id1"}
         }
@@ -69,12 +69,12 @@ transform(data, options)
 
 ```
 const options = {recursively: false}
-const data = [{apiId1: "id1", subData: [{subId: "id1"}]}]
+const data = [{apiId: "id1", subData: [{subId: "id1"}]}]
 transform(data,options)
 //will result in transforming like following
 {
-    "apiId1": {
-        apiId1: "id1",
+    "0": {
+        apiId: "id1",
         subData: [{subId: "id1"}]
     }
 }
@@ -84,12 +84,12 @@ transform(data,options)
 
 ```
 const options = {ignorePattern: "Data"}
-const data = [{apiId1: "id1", subData: [{subId: "id1"}]}]
+const data = [{apiId: "id1", subData: [{subId: "id1"}]}]
 transform(data,options)
 //will result in transforming like following
 {
-    "apiId1": {
-        apiId1: "id1",
+    "0": {
+        apiId: "id1",
         subData: [{subId: "id1"}]
     }
 }
