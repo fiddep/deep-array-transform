@@ -1,6 +1,6 @@
 {
   "name": "deep-array-transform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "transform arrays into key value objects",
   "homepage":
     "https://github.com/fiddep/deep-array-transform/blob/master/README.md",

@@ -10,7 +10,7 @@ export default (value, options = {}) => {
 
 const transform = (array, options = {}, key = "") => {
   const { defaultKey, recursively } = options;
-  if (typeof array !== "object") {
+  if (typeof array !== "object" || array === null) {
     return array;
   } else if (Array.isArray(array)) {
     return convertArrayToMap(array, options, key);
